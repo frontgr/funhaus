@@ -1,3 +1,36 @@
 * {
   box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type:  none;
+
+}
+.footer {
+  background-color: white;
+}
+.footer__logo{
+  text-align: center ;
+}
+.footer__links {
+  display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(130px, 1fr) );
+}
+.footer__heading {
+  text-align: center; 
+}
+.footer__contacts {
+  margin-top: 2em;
+}
+.footer__social{
+  display: none
+}
+.footer__icons{
+  display: flex;
+  place-items: center;
+  justify-content: center;
+
+  gap: 10px;
+}
