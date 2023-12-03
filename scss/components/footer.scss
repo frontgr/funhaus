@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 a {
     color: #FAEB8C;
     text-decoration: none;
@@ -6,11 +8,14 @@ li {
     list-style-type:  none;
 }
 .footer {   
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: #051473;
     color: #FAEB8C;
     padding: 2em 1em;
     @media (max-width: 480px) {
+        flex-direction: column;
         padding: 2em 1em;
         grid-template-columns: 1fr ;
     }
@@ -19,30 +24,78 @@ li {
     }
     @media (min-width: 768px) {
         grid-template-columns: 1fr 3fr;
+        position: relative;
     }
     li {
         color: #FAEB8C
     }
     &__logo {
-        text-align: center ;
+        width: 119px;
+        height: 74px;
+        @media (min-width: 768px){
+            position: absolute;
+            }
+        .logo__text {
+            color: $white;
+        }
+    }
+    .logo >span:nth-child(2) {
+            color: rgba(255, 255, 255, 0);
+            -webkit-text-stroke: 1px #ffffff;
     }
     &__links {
-        display: grid;
-        grid-template-columns: repeat( auto-fit, minmax(130px, 1fr) ); 
+        display: flex;
+        justify-content: flex-end;
+        gap: 2%;
+        @media (max-width: 480px) {
+            flex-direction: column;
+            padding: 2em 1em;
+            grid-template-columns: 1fr ;
+            align-items: center;
+        }
+        @media (min-width: 481px) and (max-width: 767px)  {
+            display: flex;
+            gap: 0 3%;
+            margin: 0 0 2em;
+        }
+        @media (min-width: 768px) {
+        }
         .footer__heading {
             padding: 0 2.12em;
+        }
+        .footer__list {
+            padding: 2%;
+            margin: 1%;
         }
     }
     &__contacts{
         margin-top: 2em;
-        .footer__social{
-            display: none
-        }
-        .footer__icons{
+        display: flex;
+        justify-content: space-around;
+        @media (max-width: 480px) {
             display: flex;
-            place-items: center;
-            justify-content: center;
-            gap: 10px;
+            gap: 2em;
         }
+        @media (min-width: 481px) and (max-width: 767px)  {
+            gap: 0 3%;
+        }
+        @media (min-width: 768px) {
+            gap: 0 3%;
+            justify-content: space-around;
+        }
+    }
+    .footer__social{
+        display: flex;
+        gap: 10px;
+        @media (max-width: 480px) {
+            display: none;
+            gap: 5%;
+        }
+    }
+    .footer__icons{
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        gap: 10px;
     }
 }
