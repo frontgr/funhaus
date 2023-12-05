@@ -71,7 +71,8 @@
   &__image {
     width: 100%;
 
-    height: 100%;
+    height: 383px;
+
   }
   &__heading {
     width: 296px;
@@ -85,7 +86,7 @@
   }
   &__wrapper {
     position: relative;
-
+    height: 383px;
     &:hover {
       & .image__background {
         opacity: 0.7;
@@ -142,5 +143,85 @@
   }
   .main__article{
     padding-left: 0;
+  }
+}
+@media (max-width: 1200px){
+  .main{
+    &__photo{
+      &-heading{
+        font-size: 30px;
+      }
+      &-description{
+        padding: 50px 10px;
+      }
+    }
+    &__article{
+      padding-bottom: 60px;
+    }
+  }
+  .image{
+    &-thumbnails{
+      &__wrapper{
+        gap: 0;
+      }
+    }
+  }
+}
+@media (max-width: 1000px){
+  .main{
+    &__photo{
+      &-description{
+        gap: 50px;
+        padding: 40px 10px;
+      }
+      &-subheading{
+        font-size: 20px;
+        line-height: 130.7%;
+        padding: 6px 0;        
+      }
+      &-heading{
+        font-size: 25px;
+        line-height: normal;
+      }
+    }
+    &__article{
+      padding-bottom: 30px;
+      &-heading{
+        font-size: 24px;
+        line-height: 80px;
+      }
+      &-text{
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width: 800px){
+  .main{
+    &__photo{
+      &-heading{
+        font-size: 18px;
+      }
+      &-subheading{
+        font-size: 16px;
+        list-style: 120%;
+      }
+      &-description{
+        padding: 25px 10px;
+      }
+    }
+    &-article{
+      &-heading{
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+  .image{
+    &__heading{
+      height: 80px;
+      font-size: 18px;
+      line-height: 120.7%;      
+    }
   }
 }
