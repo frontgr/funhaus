@@ -47,6 +47,7 @@ li {
         display: flex;
         justify-content: flex-end;
         gap: 2%;
+        line-height: 1.7;
         @media (max-width: 480px) {
             flex-direction: column;
             padding: 2em 1em;
@@ -61,7 +62,9 @@ li {
         @media (min-width: 768px) {
         }
         .footer__heading {
-            padding: 0 2.12em;
+            font-weight: 400;
+            font-family: 'Playfair Display', serif;
+            padding: 0 2.12em; 
         }
         .footer__list {
             padding: 2%;
