@@ -60,7 +60,22 @@
       height: 270px;
       width: 450px;
     }
+    &__menu{
+      & svg{
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &__logo{
+      height: unset;
+      &.logo{
+        
+        font-size: 30px;
+      }
+    }
   }
+
+  
 }
 
 @media (max-width: 512px) {
