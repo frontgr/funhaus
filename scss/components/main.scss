@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .main {
-  background: var(--Yellow-Main, #faeb8c);
+  background: $yellow-main;
   padding: 0 180px;
   &__image {
     & img {
@@ -70,9 +70,8 @@
 .image {
   &__image {
     width: 100%;
-
-    height: 383px;
-
+    min-width: 100%;
+    height: $image-height;
   }
   &__heading {
     width: 296px;
@@ -86,7 +85,7 @@
   }
   &__wrapper {
     position: relative;
-    height: 383px;
+    height: $image-height;
     &:hover {
       & .image__background {
         opacity: 0.7;
@@ -137,91 +136,124 @@
     }
   }
 }
-@media (max-width: 1608px){
-  .image-thumbnails__wrapper{
+@media (max-width: 1608px) {
+  $image-height: 300px;
+  .image-thumbnails__wrapper {
     justify-content: center;
   }
-  .main__article{
-    padding-left: 0;
+  .main {
+    &__article {
+      padding-left: 0;
+    }
+    &__photo-description {
+      padding: 66px 10px 62px 10px;
+    }
+    &__article {
+      padding-bottom: 70px;
+    }
   }
 }
-@media (max-width: 1200px){
-  .main{
-    &__photo{
-      &-heading{
+@media (max-width: 1200px) {
+  .main {
+    padding: 0 100px;
+    &__photo {
+      &-heading {
         font-size: 30px;
       }
-      &-description{
+      &-description {
         padding: 50px 10px;
       }
     }
-    &__article{
+    &__article {
       padding-bottom: 60px;
     }
   }
-  .image{
-    &-thumbnails{
-      &__wrapper{
+  .image {
+    &-thumbnails {
+      &__wrapper {
         gap: 0;
       }
     }
   }
 }
-@media (max-width: 1000px){
-  .main{
-    &__photo{
-      &-description{
+@media (max-width: 1000px) {
+  .main {
+    padding: 0 90px;
+    &__photo {
+      &-description {
         gap: 50px;
         padding: 40px 10px;
       }
-      &-subheading{
+      &-subheading {
         font-size: 20px;
         line-height: 130.7%;
-        padding: 6px 0;        
+        padding: 6px 0;
       }
-      &-heading{
+      &-heading {
         font-size: 25px;
         line-height: normal;
       }
     }
-    &__article{
+    &__article {
       padding-bottom: 30px;
-      &-heading{
+      &-heading {
         font-size: 24px;
         line-height: 80px;
       }
-      &-text{
+      &-text {
         font-size: 18px;
       }
     }
   }
 }
-@media (max-width: 800px){
-  .main{
-    &__photo{
-      &-heading{
+@media (max-width: 800px) {
+  $image-height: calc(#{$image-height} * (2 / 3));
+  .main {
+    padding: 0 20px;
+    &__photo {
+      &-heading {
         font-size: 18px;
       }
-      &-subheading{
+      &-subheading {
         font-size: 16px;
         list-style: 120%;
       }
-      &-description{
+      &-description {
         padding: 25px 10px;
       }
     }
-    &-article{
-      &-heading{
+    &__article {
+      &-heading {
         font-size: 20px;
         line-height: 30px;
       }
     }
   }
-  .image{
-    &__heading{
+  .image {
+    &__image {
+      height: $image-height;
+    }
+    &__wrapper {
+      height: $image-height;
+    }
+    &__heading {
       height: 80px;
       font-size: 18px;
-      line-height: 120.7%;      
+      line-height: 120.7%;
+    }
+    &__description {
+      font-size: 36px;
+    }
+  }
+}
+@media (max-width: 463px) {
+  $image-height: calc(#{$image-height} * (1.4 / 3));
+  .image {
+    &__image {
+      height: $image-height;
+    }
+    &__wrapper {
+      height: $image-height;
     }
   }
 }
