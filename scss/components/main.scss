@@ -5,7 +5,7 @@
 
 
 .main {
-  background: var(--yellow-main);
+  background: var(--bg-color);
   padding: 0 180px;
   &__image {
     & img {
@@ -29,7 +29,7 @@
     // &-wrapper {
     // }
     &-subheading {
-      color: var(--blue-main);
+      color: var(--text-color);
       font-family: "DM Sans";
       font-size: 24px;
       font-style: normal;
@@ -39,7 +39,7 @@
       padding: 16px 0;
     }
     &-heading {
-      color: var(--blue-main);
+      color: var(--text-color);
       font-family: "Playfair Display";
       font-size: 40.041px;
       font-style: normal;
@@ -53,7 +53,7 @@
     padding-left: calc(50% + 20px);
     padding-bottom: 141px;
     &-heading {
-      color: var(--blue-main);
+      color: var(--text-color);
       font-family: "DM Sans";
       font-size: 28px;
       font-style: normal;
@@ -61,7 +61,7 @@
       line-height: 153.7%; /* 43.036px */
     }
     &-text {
-      color: var(--blue-main);
+      color: var(--text-color);
       font-family: "DM Sans";
       font-size: 24px;
       font-style: normal;
@@ -79,7 +79,7 @@
   &__heading {
     width: 296px;
     height: 112px;
-    color: var(--blue-main);
+    color: var(--text-color);
     font-family: "DM Sans";
     font-size: 24px;
     font-style: normal;
@@ -103,7 +103,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--yellow-main);
+    color: var(--bg-color);
     font-family: "Playfair Display";
     font-size: 42px;
     font-style: normal;
@@ -119,7 +119,7 @@
     position: absolute;
     inset: 0;
     opacity: 0;
-    background: var(--blue-main);
+    background: var(--text-color);
     mix-blend-mode: multiply;
     transition: all 0.3s;
   }

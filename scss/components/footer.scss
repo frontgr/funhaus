@@ -1,7 +1,7 @@
 @import "../variables.scss";
 
 a {
-    color: var(--yellow-main);
+    color: var(--bg-color);
     text-decoration: none;
   }
 li {
@@ -12,8 +12,8 @@ li {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: var(--blue-main);
-    color: var(--yellow-main);
+    background-color: var(--text-color);
+    color: var(--bg-color);
     padding: 25px 10px;
     font-family: "DM Sans", serif;
     @media (max-width: 480px) {
@@ -32,7 +32,7 @@ li {
         position: relative;
     }
     li {
-        color: var(--yellow-main);
+        color: var(--bg-color);
     }
     &__logo {
         width: 119px;
@@ -42,7 +42,7 @@ li {
             position: absolute;
             }
         .logo__text {
-            color: var(--yellow-main);
+            color: var(--bg-color);
         }
     }
     .logo >span:nth-child(2) {
@@ -113,7 +113,7 @@ li {
         justify-content: center;
         gap: 10%;
         & svg path{
-            fill: var(--yellow-main);
+            fill: var(--bg-color);
         }
         @media (max-width: 562px) {
             gap: 16px;
