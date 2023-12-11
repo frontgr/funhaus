@@ -1,0 +1,1 @@
+document.documentElement.style.setProperty('$yellow-main', '#2ecc71');

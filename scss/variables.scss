@@ -1,6 +1,27 @@
-$blue-main: #051473;
-$yellow-main: #faeb8c;
-$yellow-light: #fffacb;
-$white: #ffffff;
-$black: #101010;
+// $blue-main: #051473;
+// $yellow-main: #faeb8c;
+// $yellow-light: #fffacb;
+// $white: #ffffff;
+// $black: #101010;
 $image-height: 383px;
+
+:root{
+    --blue-main: #051473;
+    --yellow-main: #faeb8c;
+    --yellow-light: #fffacb;
+    --white: #ffffff;
+    --black: #101010;
+    --image-height: 383px;
+}
+body.gray{
+    --yellow-main: #F2F2F2;
+    --blue-main: #101010;
+  }
+body.blue{
+    --yellow-main: #D3F4FF;
+    --blue-main: #050D40;
+}
+body.red{
+    --yellow-main: #8C433A;
+    --blue-main: #FDF4B8;
+}
