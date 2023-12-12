@@ -1,6 +1,27 @@
-$blue-main: #051473;
-$yellow-main: #faeb8c;
-$yellow-light: #fffacb;
-$white: #ffffff;
-$black: #101010;
+// $text-color: #051473;
+// $bg-color: #faeb8c;
+// $yellow-light: #fffacb;
+// $white: #ffffff;
+// $black: #101010;
 $image-height: 383px;
+
+:root{
+    --text-color: #051473;
+    --bg-color: #faeb8c;
+    --yellow-light: #fffacb;
+    --white: #ffffff;
+    --black: #101010;
+    --image-height: 383px;
+}
+body.gray{
+    --bg-color: #F2F2F2;
+    --text-color: #101010;
+  }
+body.blue{
+    --bg-color: #D3F4FF;
+    --text-color: #050D40;
+}
+body.red{
+    --bg-color: #8C433A;
+    --text-color: #FDF4B8;
+}

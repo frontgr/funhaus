@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display&display=swap");
 
 .header {
-  background: var(--Yellow-Main, #faeb8c);
+  background: var(--bg-color, #faeb8c);
   &__wrapper {
     height: 823px;
   }
   &__fixed {
-    background: var(--Yellow-Main, #faeb8c);
+    background: var(--bg-color, #faeb8c);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,13 +21,23 @@
     width: 119px;
     height: 74px;
   }
+  &__menu {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    & svg rect {
+      fill: var(--text-color, #051473);
+    }
+  }
   &__heading {
     padding: 235px 0 0 140px;
     width: 972px;
     height: 353px;
     margin: 0;
-    color: var(--Blue-Main, #051473);
-    font-family: Playfair Display;
+    color: var(--text-color, #051473);
+    font-family: "Playfair Display";
     font-size: 101.437px;
     font-style: normal;
     font-weight: 400;
@@ -60,22 +70,19 @@
       height: 270px;
       width: 450px;
     }
-    &__menu{
-      & svg{
+    &__menu {
+      & svg {
         width: 30px;
         height: 30px;
       }
     }
-    &__logo{
+    &__logo {
       height: unset;
-      &.logo{
-        
+      &.logo {
         font-size: 30px;
       }
     }
   }
-
-  
 }
 
 @media (max-width: 512px) {

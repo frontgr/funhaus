@@ -6,10 +6,10 @@
   font-weight: 700;
   text-transform: uppercase;
   font-size: 40px;
-  color: #051473;
+  color: var(--text-color);
   line-height: 98.7%; /* 39.48px */
   span:nth-child(2) {
     color: rgba(255, 255, 255, 0);
-    -webkit-text-stroke: 1px #051473;
+    -webkit-text-stroke: 1px var(--text-color);
   }
 }
