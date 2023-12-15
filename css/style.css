@@ -49,7 +49,7 @@ body.red {
   height: 74px;
 }
 .header__menu {
-  cursor: url("../../../src/assets/Pointer-cursor.png"), auto;
+  cursor: url("../src/assets/Pointer-cursor.png"), auto;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
