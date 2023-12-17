@@ -1,27 +1,22 @@
-// $text-color: #051473;
-// $bg-color: #faeb8c;
-// $yellow-light: #fffacb;
-// $white: #ffffff;
-// $black: #101010;
 $image-height: 383px;
 
-:root{
-    --text-color: #051473;
-    --bg-color: #faeb8c;
-    --yellow-light: #fffacb;
-    --white: #ffffff;
-    --black: #101010;
-    --image-height: 383px;
+:root {
+  --text-color: #051473;
+  --bg-color: #faeb8c;
+  --yellow-light: #fffacb;
+  --white: #ffffff;
+  --black: #101010;
+  --image-height: 383px;
 }
-body.gray{
-    --bg-color: #F2F2F2;
-    --text-color: #101010;
-  }
-body.blue{
-    --bg-color: #D3F4FF;
-    --text-color: #050D40;
+body.gray {
+  --bg-color: #f2f2f2;
+  --text-color: #101010;
 }
-body.red{
-    --bg-color: #8C433A;
-    --text-color: #FDF4B8;
+body.blue {
+  --bg-color: #d3f4ff;
+  --text-color: #050d40;
+}
+body.red {
+  --bg-color: #8c433a;
+  --text-color: #fdf4b8;
 }
