@@ -25,7 +25,7 @@ btnColorTheme.addEventListener("click", function () {
 let imageBox = document.querySelector(".main__image__container");
 let imgs = Array.from(imageBox.children); //imageBox.children;
 let currentSlide = 0;
-let maxWidth = imgs.map((img) => img.width).sort()[0];
+let maxWidth = imgs.map((img) => img.width).sort(function(a, b){return a-b})[imgs.length-1];
 imgs.forEach((img) => {
   if (img.width < maxWidth) {
     img.style.padding = `0 ${(maxWidth - img.width) / 2}px`;
