@@ -12,18 +12,18 @@
 }
 
 body.gray {
-  --bg-color: #F2F2F2;
+  --bg-color: #f2f2f2;
   --text-color: #101010;
 }
 
 body.blue {
-  --bg-color: #D3F4FF;
-  --text-color: #050D40;
+  --bg-color: #d3f4ff;
+  --text-color: #050d40;
 }
 
 body.red {
-  --bg-color: #8C433A;
-  --text-color: #FDF4B8;
+  --bg-color: #8c433a;
+  --text-color: #fdf4b8;
 }
 
 .header {
@@ -52,7 +52,6 @@ body.red {
   cursor: url("../src/assets/Pointer-cursor.png"), auto;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -334,10 +333,10 @@ body.red {
     line-height: 30px;
   }
   .image__image {
-    height: calc(383px * (2 / 3));
+    height: calc(383px * 0.6666666667);
   }
   .image__wrapper {
-    height: calc(383px * (2 / 3));
+    height: calc(383px * 0.6666666667);
   }
   .image__heading {
     height: 80px;
@@ -350,10 +349,10 @@ body.red {
 }
 @media (max-width: 463px) {
   .image__image {
-    height: calc(383px * (1.4 / 3));
+    height: calc(383px * 0.4666666667);
   }
   .image__wrapper {
-    height: calc(383px * (1.4 / 3));
+    height: calc(383px * 0.4666666667);
   }
 }
 :root {
@@ -366,18 +365,18 @@ body.red {
 }
 
 body.gray {
-  --bg-color: #F2F2F2;
+  --bg-color: #f2f2f2;
   --text-color: #101010;
 }
 
 body.blue {
-  --bg-color: #D3F4FF;
-  --text-color: #050D40;
+  --bg-color: #d3f4ff;
+  --text-color: #050d40;
 }
 
 body.red {
-  --bg-color: #8C433A;
-  --text-color: #FDF4B8;
+  --bg-color: #8c433a;
+  --text-color: #fdf4b8;
 }
 
 a {
@@ -441,7 +440,7 @@ li {
   padding: 0 8% 6%;
 }
 .footer__links a {
-  cursor: url("../../src/assets/Pointer-cursor.png"), auto;
+  cursor: url("../src/assets/Pointer-cursor.png"), auto;
 }
 @media (max-width: 480px) {
   .footer__links {
@@ -469,7 +468,7 @@ li {
   justify-content: space-around;
 }
 .footer__contacts a {
-  cursor: url("../../src/assets/Pointer-cursor.png"), auto;
+  cursor: url("../src/assets/Pointer-cursor.png"), auto;
 }
 @media (max-width: 480px) {
   .footer__contacts {
