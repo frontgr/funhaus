@@ -34,7 +34,10 @@ imgs.forEach((img) => {
 let interval = setInterval(nextSlide, 3000);
 
 window.addEventListener("resize", () => {
-  maxWidth = imgs.map((img) => img.width).sort()[0];
+  maxWidth = imgs.map((img) => img.width).sort(function(a, b){return a-b})[imgs.length-1];
+  imgs.forEach((img) => {
+      img.style.padding = `0px`;
+  });
   imgs.forEach((img) => {
     if (img.width < maxWidth) {
       img.style.padding = `0 ${(maxWidth - img.width) / 2}px`;
@@ -43,6 +46,7 @@ window.addEventListener("resize", () => {
   clearInterval(interval);
   nextSlide();
   interval = setInterval(nextSlide, 3000);
+  console.log(imgs.map(i=>i.width));
 });
 
 function nextSlide() {
