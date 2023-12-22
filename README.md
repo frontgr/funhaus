@@ -28,7 +28,7 @@ We use Prettier for formatting our text. See more about our configuration [here]
 
 ### How to run Docker
 
-I should clone the repository, install Docker and run this command in the same directory:
+You should clone the repository, install Docker and run this command in the same directory:
 
 ```bash
 docker-compose up --build
