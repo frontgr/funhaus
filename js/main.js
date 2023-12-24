@@ -46,3 +46,8 @@ window.addEventListener("resize", () => {
   window.location.reload();
 });
 /*swiper*/
+
+
+/* AOS */
+AOS.init();
+/* AOS */

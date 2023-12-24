@@ -28,6 +28,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -84,10 +85,26 @@
     <main class="main">
       <div class="main__image swiper">
         <div class="main__image__container swiper-wrapper">
-          <img src="./src/images/main_slide_1.png" class="swiper-slide" alt="chair in room" />
-          <img src="./src/images/main_slide_2.jpg" class="swiper-slide" alt="bedroom" />
-          <img src="./src/images/main_slide_3.jpg" class="swiper-slide" alt="living room" />
-          <img src="./src/images/main_slide_4.jpg" class="swiper-slide" alt="beautiful furniture" />
+          <img
+            src="./src/images/main_slide_1.png"
+            class="swiper-slide"
+            alt="chair in room"
+          />
+          <img
+            src="./src/images/main_slide_2.jpg"
+            class="swiper-slide"
+            alt="bedroom"
+          />
+          <img
+            src="./src/images/main_slide_3.jpg"
+            class="swiper-slide"
+            alt="living room"
+          />
+          <img
+            src="./src/images/main_slide_4.jpg"
+            class="swiper-slide"
+            alt="beautiful furniture"
+          />
         </div>
       </div>
       <div class="main__photo-description">
@@ -122,7 +139,7 @@
       </div>
       <div class="image-thumbnails">
         <div class="image-thumbnails__wrapper">
-          <div class="image">
+          <div class="image" data-aos="fade-right" data-aos-delay="500">
             <div class="image__wrapper">
               <img
                 src="./src/images/building_1.png"
@@ -137,7 +154,7 @@
               Explore the warmth and charm of our residential projects.
             </h3>
           </div>
-          <div class="image">
+          <div class="image" data-aos="fade-left" data-aos-delay="800">
             <div class="image__wrapper">
               <img
                 src="./src/images/building_2.gif"
@@ -152,7 +169,7 @@
               Step into a sustainable building designed by FUNHAUS.
             </h3>
           </div>
-          <div class="image">
+          <div class="image" data-aos="fade-right" data-aos-delay="500">
             <div class="image__wrapper">
               <img
                 src="./src/images/building_3.jpg"
@@ -167,7 +184,7 @@
               Celebrate diversity in design with a building.
             </h3>
           </div>
-          <div class="image">
+          <div class="image" data-aos="fade-left" data-aos-delay="800">
             <div class="image__wrapper">
               <img
                 src="./src/images/building_4.jpg"
@@ -241,7 +258,6 @@
               <a href="#">Terms & Conditions</a>
             </li>
           </ul>
-        </div>
         </div>
       </div>
       <div class="footer__contacts">
@@ -379,6 +395,7 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
