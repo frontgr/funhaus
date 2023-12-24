@@ -52,6 +52,7 @@ body.red {
   cursor: url("../src/assets/Pointer-cursor.png"), auto;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -126,16 +127,6 @@ body.red {
 .main {
   background: var(--bg-color);
   padding: 0 180px;
-}
-.main__image {
-  overflow: hidden;
-}
-.main__image__container {
-  display: flex;
-  transition: all 1s;
-}
-.main__image__container img {
-  width: 100%;
 }
 .main__line {
   width: 34px;
@@ -333,10 +324,10 @@ body.red {
     line-height: 30px;
   }
   .image__image {
-    height: calc(383px * 0.6666666667);
+    height: calc(383px * (2 / 3));
   }
   .image__wrapper {
-    height: calc(383px * 0.6666666667);
+    height: calc(383px * (2 / 3));
   }
   .image__heading {
     height: 80px;
@@ -349,12 +340,18 @@ body.red {
 }
 @media (max-width: 463px) {
   .image__image {
-    height: calc(383px * 0.4666666667);
+    height: calc(383px * (1.4 / 3));
   }
   .image__wrapper {
-    height: calc(383px * 0.4666666667);
+    height: calc(383px * (1.4 / 3));
   }
 }
+.swiper-slide {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 :root {
   --text-color: #051473;
   --bg-color: #faeb8c;
