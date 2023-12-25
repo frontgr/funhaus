@@ -4,7 +4,7 @@ Simple website of architecture company. Deploy you can check [here](https://fron
 
 ## Preview of the project
 
-![Preview image](src/assets/image.png)
+![Preview image](src/assets/image.webp)
 Link to Figma layout is [here](https://www.figma.com/file/VYw8ju5ToInkoS4C4XaQ2R/Fun-Haus-v1.0?type=design&node-id=0%3A1&mode=design&t=Hh5f9Jmwv0K7C4p7-1).
 
 ---
