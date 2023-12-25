@@ -25,13 +25,17 @@ btnColorTheme.addEventListener("click", function () {
 
 let imageBox = document.querySelector(".main__image__container");
 let imgs = Array.from(imageBox.children); //imageBox.children;
-let minHeight = imgs.map((img) => img.height).sort(function(a, b){return a-b})[0];
-let originalMinHeight = minHeight;
+let minHeightElement = imgs.sort(function (a, b) { return a.height - b.height })[0];
+let windowWidth = window.innerWidth;
+
+imgs.forEach((img, index) => {
+  img.id = index;
+})
 imgs.forEach((img) => {
-    if (img.height > minHeight) {
-      img.style.height = minHeight + "px";
-    }
-  })
+  if (img.id !== minHeightElement.id) {
+    img.style.height = minHeightElement.height + "px";
+  }
+})
 
 const swiper = new Swiper('.swiper', {
   autoplay: {
@@ -39,11 +43,18 @@ const swiper = new Swiper('.swiper', {
     disableOnInteraction: false,
   },
   speed: 1600,
-  height: minHeight,
 });
 
 window.addEventListener("resize", () => {
-  window.location.reload();
+  if (windowWidth !== window.innerWidth) {
+    windowWidth = window.innerWidth;
+    imgs.forEach((img) => {
+      if (img.id !== minHeightElement.id) {
+        img.style.height = minHeightElement.height + "px";
+      }
+    })
+  }
+
 });
 /*swiper*/
 

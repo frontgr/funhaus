@@ -244,6 +244,7 @@ body.red {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+  overflow: hidden;
 }
 
 @media (max-width: 1608px) {
