@@ -53,7 +53,7 @@ li {
     line-height: 1.7;
     padding: 0 8% 6%;
     & a {
-      cursor: url("../src/assets/Pointer-cursor.png"), auto;
+      cursor: url("../src/assets/Pointer-cursor.webp"), auto;
     }
     @media (max-width: 480px) {
       flex-direction: column;

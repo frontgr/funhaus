@@ -437,7 +437,7 @@ li {
   padding: 0 8% 6%;
 }
 .footer__links a {
-  cursor: url("../src/assets/Pointer-cursor.png"), auto;
+  cursor: url("../src/assets/Pointer-cursor.webp"), auto;
 }
 @media (max-width: 480px) {
   .footer__links {
